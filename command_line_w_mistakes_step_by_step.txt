@@ -1,0 +1,397 @@
+Microsoft Windows [Version 10.0.17763.316]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Corey>cd Desktop\test
+
+C:\Users\Corey\Desktop\test>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (test)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Corey\Desktop\test\package.json:
+
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\Corey\Desktop\test>npm install express --save
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN test@1.0.0 No description
+npm WARN test@1.0.0 No repository field.
+
++ express@4.16.4
+added 48 packages from 36 contributors and audited 121 packages in 4.04s
+found 0 vulnerabilities
+
+
+C:\Users\Corey\Desktop\test>node index.js
+^C
+C:\Users\Corey\Desktop\test>node index.js
+^C
+C:\Users\Corey\Desktop\test>curl -X POST "http://localhost:3000/hello"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /hello</pre>
+</body>
+</html>
+
+C:\Users\Corey\Desktop\test>node index.js
+^C
+C:\Users\Corey\Desktop\test>npm install express --save
+Terminate batch job (Y/N)? y
+
+C:\Users\Corey\Desktop\test>node index.js
+^C
+C:\Users\Corey\Desktop\test>curl -X POST "http://localhost:3000/hello"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /hello</pre>
+</body>
+</html>
+
+C:\Users\Corey\Desktop\test>node index.js
+^C
+C:\Users\Corey\Desktop\test>node cs.js
+^C
+C:\Users\Corey\Desktop\test>y
+'y' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Corey\Desktop\test>node cs.js
+^C
+C:\Users\Corey\Desktop\test>cd ./test2
+The system cannot find the path specified.
+
+C:\Users\Corey\Desktop\test>cd ../test
+
+C:\Users\Corey\Desktop\test>cd ../test2
+
+C:\Users\Corey\Desktop\test2>node init
+internal/modules/cjs/loader.js:605
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Users\Corey\Desktop\test2\init'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:603:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (test2)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Corey\Desktop\test2\package.json:
+
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\Corey\Desktop\test2>npm install fs yargs lodash --save
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN test2@1.0.0 No description
+npm WARN test2@1.0.0 No repository field.
+
++ fs@0.0.1-security
++ lodash@4.17.11
++ yargs@13.2.1
+added 61 packages from 15 contributors and audited 69 packages in 6.084s
+found 0 vulnerabilities
+
+
+C:\Users\Corey\Desktop\test2>node app.js
+C:\Users\Corey\Desktop\test2\app.js:17
+var command = argv._[0];
+              ^
+
+ReferenceError: argv is not defined
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:17:15)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+C:\Users\Corey\Desktop\test2\app.js:17
+var command = argv._[0];
+              ^
+
+ReferenceError: argv is not defined
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:17:15)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>npm install express --save
+npm WARN test2@1.0.0 No description
+npm WARN test2@1.0.0 No repository field.
+
++ express@4.16.4
+added 48 packages from 36 contributors and audited 190 packages in 4.015s
+found 0 vulnerabilities
+
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+C:\Users\Corey\Desktop\test2\app.js:17
+var command = argv._[0];
+              ^
+
+ReferenceError: argv is not defined
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:17:15)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+C:\Users\Corey\Desktop\test2\app.js:17
+var command = argv._[0];
+              ^
+
+ReferenceError: argv is not defined
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:17:15)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+C:\Users\Corey\Desktop\test2\app.js:36
+    var note = notes.addNote(argv.title,argv.body);
+               ^
+
+ReferenceError: notes is not defined
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:36:16)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+C:\Users\Corey\Desktop\test2\app.js:36
+    var note = notes.addNote(argv.title,argv.body);
+               ^
+
+ReferenceError: notes is not defined
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:36:16)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+internal/modules/cjs/loader.js:605
+    throw err;
+    ^
+
+Error: Cannot find module './notes.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:603:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:25)
+    at Module.require (internal/modules/cjs/loader.js:657:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+internal/modules/cjs/loader.js:605
+    throw err;
+    ^
+
+Error: Cannot find module './notes.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:603:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:25)
+    at Module.require (internal/modules/cjs/loader.js:657:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+internal/modules/cjs/loader.js:605
+    throw err;
+    ^
+
+Error: Cannot find module './notes.js'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:603:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:25)
+    at Module.require (internal/modules/cjs/loader.js:657:17)
+    at require (internal/modules/cjs/helpers.js:20:18)
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:4:15)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test command -b adding
+Note already exists
+
+C:\Users\Corey\Desktop\test2>node app.js add -t tests command -b addings
+C:\Users\Corey\Desktop\test2\app.js:39
+      notes.logNote(note);                                //add a new note
+            ^
+
+TypeError: notes.logNote is not a function
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:39:13)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test ase -b ase
+C:\Users\Corey\Desktop\test2\app.js:37
+    var note = notes.addNote(argv.title,argv.body);
+                     ^
+
+TypeError: notes.addNote is not a function
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:37:22)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test ase -b ase
+C:\Users\Corey\Desktop\test2\app.js:37
+    var note = notes.addNote(argv.title,argv.body);
+                     ^
+
+TypeError: notes.addNote is not a function
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:37:22)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test ase -b ase
+C:\Users\Corey\Desktop\test2\app.js:37
+    var note = notes.addNote(argv.title,argv.body);
+                     ^
+
+TypeError: notes.addNote is not a function
+    at Object.<anonymous> (C:\Users\Corey\Desktop\test2\app.js:37:22)
+    at Module._compile (internal/modules/cjs/loader.js:721:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:732:10)
+    at Module.load (internal/modules/cjs/loader.js:620:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:560:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:552:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:774:12)
+    at executeUserCode (internal/bootstrap/node.js:499:15)
+    at startMainThreadExecution (internal/bootstrap/node.js:436:3)
+
+C:\Users\Corey\Desktop\test2>node app.js add -t test ase -b ase
+Note already exists
+
+C:\Users\Corey\Desktop\test2>node app.js add -t testase1 -b ase1
+--
+Title: testase1
+Body: ase1
+
+C:\Users\Corey\Desktop\test2>
